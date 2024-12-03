@@ -18,6 +18,7 @@ Does this sound like you?
 - Standing in Austin, TX
 
 Then head over to [austin-food-scores](https://huggingface.co/spaces/ThatOrJohn/austin-food-scores).
+
 Click the `Update Location` button to plot nearby restaurants on the map. Click a restaurant to display its most recent
 inspection score.
 
