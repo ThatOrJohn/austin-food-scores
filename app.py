@@ -79,7 +79,7 @@ def generate_inspection_map(lat, lon):
 
         if inspection_data.empty:
             return px.scatter_mapbox(
-                title="No Inspection Data Found",
+                title="No Inspection Data Found.  Are you near Austin, TX restaurants?",
                 lat=[],
                 lon=[],
             )
