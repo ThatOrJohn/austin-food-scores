@@ -12,6 +12,15 @@ license: apache-2.0
 
 # austin-food-scores
 
+Does this sound like you?
+
+- Hates dirty restaurants
+- Standing in Austin, TX
+
+Then you've come to the right site. Click the `Update Location` button to plot
+nearby restaurants on the map. Click a restaurant to display its most recent
+inspection score.
+
 [Gradio](https://www.gradio.app/) app that displays Austin food establishment inspection scores
 for locations in an 800 meter radius.
 
