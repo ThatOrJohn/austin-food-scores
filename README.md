@@ -17,8 +17,8 @@ Does this sound like you?
 - Hates dirty restaurants
 - Standing in Austin, TX
 
-Then you've come to the right site. Click the `Update Location` button to plot
-nearby restaurants on the map. Click a restaurant to display its most recent
+Then head over to [austin-food-scores](https://huggingface.co/spaces/ThatOrJohn/austin-food-scores).
+Click the `Update Location` button to plot nearby restaurants on the map. Click a restaurant to display its most recent
 inspection score.
 
 [Gradio](https://www.gradio.app/) app that displays Austin food establishment inspection scores
