@@ -23,6 +23,6 @@ Click the `Update Location` button to plot nearby restaurants on the map. Click 
 inspection score.
 
 [Gradio](https://www.gradio.app/) app that displays Austin food establishment inspection scores
-for locations in an 800 meter radius.
+for locations in an 800 meter radius of your current location.
 
 [Dataset description](https://datahub.austintexas.gov/stories/s/Food-Establishment-Inspection-Scores/7scf-8i7v/)
