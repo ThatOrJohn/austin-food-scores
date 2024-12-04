@@ -53,8 +53,6 @@ def fetch_inspection_data(lat, lon, radius=800):
                     "longitude") if addr and "longitude" in addr else None
             )
 
-            df.to_csv(r'data.csv', index=None, sep=' ', mode='a')
-
             # Convert latitude and longitude columns to float
             df["latitude"] = pd.to_numeric(df["latitude"], errors="coerce")
             df["longitude"] = pd.to_numeric(df["longitude"], errors="coerce")
@@ -71,24 +69,25 @@ def fetch_inspection_data(lat, lon, radius=800):
 
 
 def generate_inspection_map(lat, lon):
-    # lat = 30.262189
-    # lon = -97.723689
+    # Austin testing coords
+    # lat = 30.230280  # 30.262189
+    # lon = -97.801310  # -97.723689
     try:
         lat, lon = float(lat), float(lon)
         inspection_data = fetch_inspection_data(lat, lon)
 
         if inspection_data.empty:
             return px.scatter_mapbox(
-                title="No Inspection Data Found.  Are you near Austin, TX restaurants?",
+                title="No Inspection Data Found",
                 lat=[],
                 lon=[],
             )
 
         def categorize_score(score):
             if score >= 90:
-                return "#8FBC8F"
+                return "green"
             elif 70 <= score < 90:
-                return "#FEFE22"
+                return "yellow"
             else:
                 return "red"
 
@@ -112,6 +111,8 @@ def generate_inspection_map(lat, lon):
                         "latitude": False,
                         "longitude": False},
             color="Color",
+            color_discrete_map={"red": "#FF0000",
+                                "green": "#00FF00", "yellow": "#FFFF00"},
             size="MarkerSize",
             zoom=15,
             title="Restaurant Inspection Scores",
