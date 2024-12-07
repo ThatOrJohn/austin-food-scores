@@ -70,8 +70,8 @@ def fetch_inspection_data(lat, lon, radius=800):
 
 def generate_inspection_map(lat, lon):
     # Austin testing coords
-    lat = 30.262189  # 30.230280  # 30.262189
-    lon = -97.723689  # -97.801310  # -97.723689
+    # lat = 30.262189  # 30.230280  # 30.262189
+    # lon = -97.723689  # -97.801310  # -97.723689
     try:
         lat, lon = float(lat), float(lon)
         inspection_data = fetch_inspection_data(lat, lon)
