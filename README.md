@@ -26,3 +26,7 @@ inspection score.
 for locations in an 800 meter radius of your current location.
 
 [Dataset description](https://datahub.austintexas.gov/stories/s/Food-Establishment-Inspection-Scores/7scf-8i7v/)
+
+# If you're trying to run this on your own, you'll need to export an env var called
+
+`AUSTIN_DATA_API_TOKEN` with a valid token for the [Austin Open Data Portal](https://data.austintexas.gov)
